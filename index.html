@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#05070a">
+<title>DUDE STORE — Denim / Art / Attitude</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="boot" id="boot"><div class="boot-grid"></div><div class="logo-live boot-logo"><img src="logo-source.jpg" alt="DUDE logo"><span></span><i></i></div><p>DENIM / ART / ATTITUDE / KL</p></div>
+<canvas id="particles"></canvas><div class="cursor"></div><div class="wipe" id="wipe"></div>
+<header class="topbar"><button class="hamb" id="menuOpen"><i></i><i></i><i></i></button><button class="brand nav" data-page="home"><span class="logo-live mini"><img src="logo-source.jpg" alt="DUDE logo"><span></span><i></i></span></button><div class="head-actions"><button id="searchOpen" class="search">⌕</button><button id="bagOpen" class="bag">BAG <b id="bagCount">0</b></button></div></header>
+
+<aside class="menu" id="menu"><div class="menu-head"><small>DUDE STORE</small><button id="menuClose">×</button></div><nav>
+<button class="nav" data-page="home"><em>01</em><span>HOME</span><b>↗</b></button>
+<button class="nav" data-page="shop"><em>02</em><span>SHOP</span><b>↗</b></button>
+<button class="nav" data-page="collections"><em>03</em><span>COLLECTIONS</span><b>↗</b></button>
+<button class="nav" data-page="about"><em>04</em><span>ABOUT DUDE</span><b>↗</b></button>
+<button class="nav" data-page="contact"><em>05</em><span>CONTACT</span><b>↗</b></button>
+</nav><div class="menu-foot"><a href="https://instagram.com/tengkumuaaz" target="_blank">INSTAGRAM ↗</a><a href="https://wa.me/60192412569" target="_blank">WHATSAPP ↗</a></div></aside><div class="shade" id="menuShade"></div>
+
+<section class="search-layer" id="searchLayer"><button id="searchClose">×</button><div><small>SEARCH DUDE</small><input id="searchInput" placeholder="WHAT ARE YOU LOOKING FOR?"><div class="search-results" id="searchResults"></div></div></section>
+
+<aside class="cart" id="cart"><div class="cart-head"><div><small>DUDE STORE</small><h2>YOUR BAG</h2></div><button id="cartClose">×</button></div><div class="cart-items" id="cartItems"></div><div class="empty" id="empty"><b>0</b><h3>Nothing here yet.</h3><p>Build a look. Make it yours.</p><button class="nav" data-page="shop">SHOP THE DROP</button></div><div class="cart-bottom"><div><span>SUBTOTAL</span><strong id="subtotal">RM0</strong></div><button id="checkout">CHECKOUT VIA WHATSAPP ↗</button><small>Order details will be prepared automatically.</small></div></aside><div class="shade" id="cartShade"></div>
+
+<div class="toast" id="toast"><div id="toastImg"></div><p><small>ADDED TO BAG</small><b id="toastName"></b></p><button id="toastBag">VIEW BAG</button></div>
+
+<main>
+<section class="page active" data-page="home">
+  <section class="home360 home360-v2">
+  <div class="topline">
+    <span>01 / LIVE OBJECT</span>
+    <span>DRAG • SWIPE • ROTATE</span>
+  </div>
+
+  <div class="home360-grid home360-grid-v2">
+    <div class="copy360">
+      <small>DUDE OBJECT 001</small>
+      <h1>DENIM<br><i>IN MOTION.</i></h1>
+      <p>
+        A clean digital denim object made for DUDE. Swipe or drag to turn it
+        from front to side to back without the photoshoot background.
+      </p>
+
+      <div class="spec">
+        <span>BLACK TRIBAL DENIM</span>
+        <span>WIDE / STACKED</span>
+        <span>DROP 001</span>
+      </div>
+    </div>
+
+    <div class="turntable" id="turntable">
+      <div class="turntable-glow"></div>
+      <div class="turntable-ring ring-a"></div>
+      <div class="turntable-ring ring-b"></div>
+      <div class="turntable-floor"></div>
+
+      <div class="jeans-viewer" id="jeansViewer">
+        <img class="jeans-view active" data-view="FRONT" data-angle="000" src="jeans-front.png" alt="DUDE black tribal jeans front view">
+        <img class="jeans-view" data-view="RIGHT" data-angle="090" src="jeans-right.png" alt="DUDE black tribal jeans right view">
+        <img class="jeans-view" data-view="BACK" data-angle="180" src="jeans-back.png" alt="DUDE black tribal jeans back view">
+        <img class="jeans-view" data-view="LEFT" data-angle="270" src="jeans-left.png" alt="DUDE black tribal jeans left view">
+      </div>
+
+      <div class="turntable-status">
+        <button id="jeansPrev" aria-label="Rotate left">←</button>
+        <div>
+          <small>360° PRODUCT VIEW</small>
+          <strong id="jeansStatus">FRONT / 000°</strong>
+        </div>
+        <button id="jeansNext" aria-label="Rotate right">→</button>
+      </div>
+
+      <div class="drag-hint">↔ DRAG / SWIPE</div>
+    </div>
+  </div>
+</section>
+
+<section class="hero"><img src="hero-main.jpg" alt="DUDE Store campaign hero"><div class="hero-dark"></div><div class="hero-copy"><small>CAMPAIGN 001 / KUALA LUMPUR</small><h2>RECONSTRUCTING<br><strong>DENIM</strong></h2><p>Beyond its original form.</p><div><button class="nav white" data-page="collections">EXPLORE COLLECTIONS</button><button class="nav clear" data-page="shop">SHOP THE DROP</button></div></div><div class="ticker"><span>DUDE STORE • DENIM RECONSTRUCTED • LIMITED OBJECTS • KUALA LUMPUR • WEAR THE PROCESS • </span><span>DUDE STORE • DENIM RECONSTRUCTED • LIMITED OBJECTS • KUALA LUMPUR • WEAR THE PROCESS • </span></div></section>
+  <section class="homecards"><button class="nav" data-page="shop"><img src="product-floral-denim.jpg"><div><small>LATEST DROP</small><h3>WEARABLE<br>ART OBJECTS</h3><b>SHOP ↗</b></div></button><button class="nav" data-page="collections"><img src="campaign-reconstruct-03.jpg"><div><small>CAMPAIGN 001</small><h3>RECONSTRUCTED<br>DENIM</h3><b>ENTER ↗</b></div></button></section>
+</section>
+
+<section class="page" data-page="shop"><div class="pagehero"><div><small>02 / SHOP</small><h1>OBJECTS<br>FOR <i>WEARING.</i></h1></div><p>Tap any product for size, quantity and Add to Bag. Your cart stays saved even when you change pages or refresh.</p></div><div class="filters"><div id="filters"><button data-f="all" class="on">ALL</button><button data-f="jeans">JEANS</button><button data-f="jacket">JACKETS</button><button data-f="top">TOPS</button><button data-f="kurta">KURTA</button></div><span id="count"></span></div><div class="products" id="products"></div></section>
+
+<section class="page" data-page="collections"><div class="pagehero"><div><small>03 / COLLECTIONS</small><h1>NOT JUST<br><i>CLOTHES.</i></h1></div><p>Every collection opens as an immersive gallery. Swipe through the campaign images you supplied — faces remain exactly as in the originals.</p></div><div class="collections">
+<article data-gallery="campaign-reconstruct-01.jpg,campaign-reconstruct-02.jpg,campaign-reconstruct-03.jpg,campaign-reconstruct-04.jpg,campaign-reconstruct-05.jpg,campaign-reconstruct-06.jpg,campaign-reconstruct-07.jpg"><img src="campaign-reconstruct-01.jpg"><div><small>COLLECTION 01</small><h2>RECONSTRUCTED<br>DENIM</h2><p>Raw seams, blue/black contrast and oversized construction.</p><button>ENTER CAMPAIGN ↗</button></div></article>
+<article class="rev" data-gallery="campaign-corduroy-01.jpg,campaign-corduroy-02.jpg,campaign-corduroy-03.jpg"><img src="campaign-corduroy-01.jpg"><div><small>COLLECTION 02</small><h2>CORDUROY<br>ESSENTIALS</h2><p>Warm texture, earth colour and a quieter oversized chapter.</p><button>ENTER CAMPAIGN ↗</button></div></article>
+<article data-gallery="campaign-flower-01.jpg,campaign-flower-02.jpg,campaign-flower-03.jpg"><img src="campaign-flower-02.jpg"><div><small>COLLECTION 03</small><h2>DENIM STREET<br>FLOWER STUDY</h2><p>Blue denim against Kuala Lumpur colour.</p><button>ENTER CAMPAIGN ↗</button></div></article>
+<article class="rev" data-gallery="campaign-heritage-01.jpg,campaign-heritage-02.jpg,campaign-heritage-03.jpg,campaign-heritage-04.jpg,campaign-heritage-05.jpg"><img src="campaign-heritage-01.jpg"><div><small>COLLECTION 04</small><h2>MODERN<br>HERITAGE</h2><p>Baju kurta placed next to custom reconstructed denim.</p><button>ENTER CAMPAIGN ↗</button></div></article>
+<article data-gallery="runway-01.jpg,runway-02.jpg,runway-03.jpg"><img src="runway-01.jpg"><div><small>COLLECTION 05 / RUNWAY</small><h2>THE MAXIMA<br>RUNWAY</h2><p>Denim reconstruction amplified for stage.</p><button>VIEW RUNWAY ↗</button></div></article>
+</div></section>
+
+<section class="page" data-page="about"><div class="about"><div class="huge">DUDE</div><div><small>04 / ABOUT DUDE</small><h1>DENIM IS<br>A MATERIAL.<br><i>NOT A LIMIT.</i></h1><p>DUDE STORE is an experimental fashion label built around denim reconstruction, oversized silhouette and the idea that everyday clothing can carry the energy of a one-off design piece.</p></div></div><div class="manifest"><div><b>01</b><h2>WE CUT.</h2><p>Old proportions are broken down.</p></div><div><b>02</b><h2>WE REBUILD.</h2><p>Panels, seams and textures create new forms.</p></div><div><b>03</b><h2>YOU WEAR.</h2><p>The object lives differently on every person.</p></div></div><div class="aboutpics"><img src="campaign-reconstruct-07.jpg"><img src="campaign-heritage-02.jpg"><img src="campaign-flower-03.jpg"></div></section>
+
+<section class="page" data-page="contact"><div class="contact"><div><small>05 / CONTACT</small><h1>LET'S MAKE<br>SOMETHING<br><i>LOUDER.</i></h1><p>Orders, sizing questions, custom work and collaborations — contact DUDE directly.</p></div><div class="contactlist"><a href="https://wa.me/60192412569?text=Hi%20DUDE%20STORE%2C%20I%27m%20interested%20in%20your%20collection." target="_blank"><small>WHATSAPP</small><h2>019 241 2569</h2><b>START CHAT ↗</b></a><a href="https://instagram.com/tengkumuaaz" target="_blank"><small>INSTAGRAM</small><h2>@tengkumuaaz</h2><b>OPEN PROFILE ↗</b></a><a href="mailto:tengkumuaa0111@gmail.com"><small>EMAIL</small><h2>tengkumuaa0111@gmail.com</h2><b>SEND EMAIL ↗</b></a></div></div></section>
+</main>
+
+<section class="modal" id="productModal"><button class="modalx" id="productClose">×</button><div class="modalin"><div class="modalimg"><img id="mImg"></div><div class="modalcopy"><small id="mCat"></small><h2 id="mName"></h2><strong id="mPrice"></strong><p id="mDesc"></p><label>SIZE</label><div class="sizes" id="sizes"></div><div class="buy"><div class="qty"><button id="minus">−</button><b id="qty">1</b><button id="plus">+</button></div><button id="add">ADD TO BAG ↗</button></div></div></div></section>
+<section class="gallery" id="gallery"><button class="modalx" id="galleryClose">×</button><small id="galleryCount"></small><button id="prev" class="arrow">←</button><img id="galleryImg"><button id="next" class="arrow">→</button></section>
+<a class="wa" href="https://wa.me/60192412569" target="_blank"><span>WA</span><b>CHAT</b></a>
+<footer><div class="footlogo logo-live"><img src="logo-source.jpg" alt="DUDE logo"><span></span><i></i></div><div><span>DO MORE. WEAR DUDE.</span><nav><a href="https://instagram.com/tengkumuaaz" target="_blank">INSTAGRAM</a><a href="https://wa.me/60192412569" target="_blank">WHATSAPP</a><a href="mailto:tengkumuaa0111@gmail.com">EMAIL</a></nav><span>© 2026 DUDE STORE</span></div></footer>
+<script src="script.js"></script>
+</body></html>
